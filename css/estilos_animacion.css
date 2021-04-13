@@ -1,0 +1,115 @@
+body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+
+#contenedor_fondo_animacion{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: radial-gradient(rgba(168, 168, 168,1) 10%, rgba(201, 201, 201,1) 50%, rgba(244, 244, 244,1) 100%); /* Standard syntax*/
+    animation: animacion 4s linear; 
+    animation-fill-mode: forwards;
+    z-index: 900;
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: rgba(0, 152, 255, 1.0);
+    animation: animacion_3 3s linear; 
+    animation-fill-mode: forwards;
+}
+ 
+#loader::before {
+    content: " ";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: rgba(26, 208, 228,1);
+    animation: animacion_2 3s linear; 
+    animation-fill-mode: forwards;
+}
+ 
+#loader::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: rgba(48, 48, 48,1);
+    animation: animacion_1 3s linear; 
+    animation-fill-mode: forwards;
+}
+@keyframes animacion_1 {
+    0%{
+        transform: rotate(0deg);  
+    }
+
+    100%{
+        transform: rotate(360deg);       
+    }
+
+}
+@keyframes animacion_2 {
+    0%{
+        transform: rotate(0deg);  
+    }
+
+    100%{
+        transform: rotate(720deg);   
+    }
+
+}
+
+@keyframes animacion_3 {
+    0%{
+        transform: rotate(0deg);      
+    }
+
+    100%{
+        transform: rotate(1080deg); 
+    }
+}
+
+@keyframes animacion{
+    0%{
+        z-index:900; 
+        opacity: 1;
+    }
+    75%{
+        z-index:900;
+        opacity: 1;
+    }
+    100%{
+       z-index:-900;
+       opacity: 0;
+     }
+ }
+
+

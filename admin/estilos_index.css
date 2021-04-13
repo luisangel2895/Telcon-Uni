@@ -1,0 +1,111 @@
+body{
+
+	background-image:url('fondo_index.png');
+
+}
+
+@font-face{
+
+	font-family:curva;
+
+	src: url('fuente_curva.ttf');
+
+}
+
+#contenedor{
+
+	width:50%;
+
+	margin:auto;
+
+	margin-top:7%;
+
+	background-color:rgba(79, 75, 179, 0.5);
+
+	border-radius:25px;
+
+	
+
+}
+
+#titulo{
+
+	background-color:black;
+
+	text-align:center;
+
+	padding:2%;
+
+	color:white;
+
+	font-family:curva,arial;
+
+	font-size:300%;
+
+}
+
+#contenedor_botones{
+
+	position:relative;
+
+	color:white;
+
+	padding:7%;
+
+	text-align: center;
+
+
+
+}
+
+.botones{
+
+	font-size:120%;
+
+	color:white;
+
+	text-decoration:none;
+
+	padding:15px;
+
+	border-radius:15px;
+
+
+
+}
+
+#boton2{
+
+	background-color:rgb(175, 18, 28);
+
+	position:absolute;
+
+	right:10%;
+
+	bottom:30%;
+
+}
+
+#boton1{
+
+	background-color:rgb(55, 153, 111);
+
+	position:absolute;
+
+	left:35%;
+
+	bottom:30%;
+
+}
+
+#boton1:hover{
+
+	background-color:rgb(28, 78, 56);
+
+}
+
+#boton2:hover{
+
+	background-color:rgb(101, 10, 16);
+
+}
